@@ -4,17 +4,17 @@
 <head>
     <title>The art of Yari</title>
 
-    <meta name="description" content="(unfinished) Gallery of all my works">
-    <meta name="keywords" content="pixel-art, pixelart, gallery, art, digital art, pixel art">
+    <meta name="description" content="Some projects I contributed to.">
+    <meta name="keywords" content="pixel-art, pixelart, gallery, art, digital art, pixel art, game, games, online game">
     <meta name="author" content="Yari">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="css/pages/gallery-page.css">
+    <link rel="stylesheet" href="css/pages/projects.css">
 </head>
 
 <body>
@@ -39,14 +39,22 @@
     </header>
 
     <main class="column center">
-        <section class="column full-width center">
-            <h2>The Art of Yari</h2>
-            <div class="grid gallery-6" id="main-gallery">
-                
-            </div>
-        </section>
+        <h1 class="container full-width text-center">Yari's ramblings</h1>
+        <section class="row container">
+            <a href="Articles/mixels.html" class="invisible-button">
+                <div class="column container full-width">
+                    <h2>About Mixels</h2>
+                    <p>
+                        If you ever worked on pixel-art and engaged with the community or even just watched a simple
+                        beginners tutorial, you’ve probably heard of them. It's among the 1st things you’re told to avoid.
+                        Is it correct tough? In this article I'll go over why I think there is time and place for mixels
+                        within pixel-art.
+                    </p>
+                </div>
+            </a>
+            </section>
     </main>
-    
+
     <footer class="column full-width">
         <div class="always-row space-between">
             <p>Crafted with love by Yari</p>
@@ -54,17 +62,9 @@
         </div>
     </footer>
 
-    <div id="modal-display" class="column center">
-        <i id="modal-prev-arrow" class="fa-solid fa-chevron-left fa-2xl"></i>
-        <div id="aspect-ratio-container">
-            <img id="modal-image" src="" alt="" title="">
-        </div>
-        <i id="modal-next-arrow" class="fa-solid fa-chevron-right fa-2xl"></i>
-    </div>
-
-    <script type="text/javascript" src="js/gallery-modal.js"></script>
-    <script type="text/javascript" src="js/disable-scroll.js"></script>
     <script type="text/javascript" src="js/random-text.js"></script>
     <script type="text/javascript" src="js/navigation.js"></script>
+    <script type="text/javascript" src="js/accordion.js"></script>
 </body>
+
 </html>
