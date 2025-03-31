@@ -1,0 +1,5 @@
+/* import css súborov potrebných na tejto stránke */
+@import "../main.css";
+@import "../classes/button.css";
+@import "../classes/flex.css";
+@import "../classes/navigation.css";
