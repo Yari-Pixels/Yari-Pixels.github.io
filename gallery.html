@@ -18,11 +18,10 @@
 </head>
 
 <body>
-    <!-- hlavička s názvom stránky a preklikmi -->
     <header class="column center space-between full-width">
         <div class="always-row">
-            <img src="img/logo.png" alt="Logo">
-            <h1>Yari's Art</h1>
+            <img src="../img/logo.png" alt="Logo">
+            <p id="website-title">Yari</p>
         </div>
         <div id="navigation-top" class="navigation-container always-row full-width">
             <i class="navigation-icon fa-solid fa-bars"></i>
@@ -39,7 +38,6 @@
     </header>
 
     <main class="column center">
-        <!-- responzívna galéria o šírke max 6 elementov ktorá je napĺňaná pomocou javascriptu -->
         <section class="column full-width center">
             <h2>The Art of Yari</h2>
             <div class="grid gallery-6" id="main-gallery">
@@ -48,15 +46,13 @@
         </section>
     </main>
     
-    <!-- Footer, s preklikmi na ďalšie sekcie stránky a základnými informáciami -->
     <footer class="column full-width">
-        <!-- o autorovi stránky a náhodný text s preklikom na rick-roll -->
         <div class="always-row space-between">
             <p>Crafted with love by Yari</p>
             <a id="random-text" class="invisible-button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>
         </div>
     </footer>
-    <!-- div pre zobrazenie detailu obrázku skrz celú stránku nad ostatným obsahom -->
+
     <div id="modal-display" class="column center">
         <i id="modal-prev-arrow" class="fa-solid fa-chevron-left fa-2xl"></i>
         <div id="aspect-ratio-container">
@@ -64,7 +60,7 @@
         </div>
         <i id="modal-next-arrow" class="fa-solid fa-chevron-right fa-2xl"></i>
     </div>
-    <!-- importovanie scriptov -->
+    
     <script type="text/javascript" src="js/gallery-modal.js"></script>
     <script type="text/javascript" src="js/disable-scroll.js"></script>
     <script type="text/javascript" src="js/random-text.js"></script>

@@ -18,27 +18,25 @@
 </head>
 
 <body>
-    <!-- hlavička s názvom stránky a preklikmi -->
     <header class="column center space-between full-width">
         <div class="always-row">
-            <img src="img/logo.png" alt="Logo">
-            <h1>Yari's Art</h1>
+            <img src="../img/logo.png" alt="Logo">
+            <p id="website-title">Yari</p>
         </div>
         <div id="navigation-top" class="navigation-container always-row full-width">
             <i class="navigation-icon fa-solid fa-bars"></i>
             <nav>
                 <ul class="navigation space-between">
-                    <li><a class="button invisible-button" href="index.html">Home</a></li>
-                    <li><a class="button invisible-button" href="questionsNoAnswers.html">QNA</a></li>
-                    <li><a class="button invisible-button" href="projects.html">Projects</a></li>
-                    <li><a class="button invisible-button" href="gallery.html">Gallery</a></li>
-                    <li><a class="button invisible-button" href="card.html">Card</a></li>
+                    <li><a class="button invisible-button" href="../index.html">Home</a></li>
+                    <li><a class="button invisible-button" href="../questionsNoAnswers.html">QNA</a></li>
+                    <li><a class="button invisible-button" href="../projects.html">Projects</a></li>
+                    <li><a class="button invisible-button" href="../gallery.html">Gallery</a></li>
+                    <li><a class="button invisible-button" href="../card.html">Card</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- acordion so zoznamom otázok a odpovedí, ktoré sa vďaka javasriptu zobrazia až po kliknutí na otázku -->
     <main class="column center">
         <section class="accordion column center full-width">
             <h2 class="center-text">Question No Answers</h2>
@@ -92,8 +90,6 @@
             </div>
         </section>
         
-        <!-- Formulár cez ktorý sa môžu ľudia opýtať na otázky ak nie sú obsiahnuté v QNA -->
-        <!-- obsahuje input pre meno, email, otázku, checkbox na súhlas o spracovaní osobných údajov a tlačítko na odovzdanie -->
         <form class="column" action="thankYou.html">
             <h2 class="center-text">Was your question not answered? Contact me here</h2>
             <label for="name">Name:</label>
@@ -114,16 +110,13 @@
         </form>
     </main>
 
-    <!-- Footer, s preklikmi na ďalšie sekcie stránky a základnými informáciami -->
     <footer class="column full-width">
-        <!-- o autorovi stránky a náhodný text s preklikom na rick-roll -->
         <div class="always-row space-between">
             <p>Crafted with love by Yari</p>
             <a id="random-text" class="invisible-button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>
         </div>
     </footer>
 
-    <!-- importovanie scriptov -->
     <script type="text/javascript" src="js/random-text.js"></script>
     <script type="text/javascript" src="js/navigation.js"></script>
     <script type="text/javascript" src="js/accordion.js"></script>
