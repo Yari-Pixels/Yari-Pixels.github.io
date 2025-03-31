@@ -100,9 +100,10 @@ header img {
 footer {
     width: 100%;
     position: sticky;
-    top: calc(100lvh - 57px);
+    top: calc(100vh - 57px);
+    top: calc(100dvh - 57px);
     padding: 15px 20px;
-    height: 260;
+    height: 57px;
 }
 
 /* zariadie správne rozloženie stĺpcov s informáciami vo footeri */
