@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The art of Yari</title>
+
+    <meta name="description" content="frequently asked questions and contact form">
+    <meta name="keywords" content="pixel-art, pixelart, gallery, art, digital art, pixel art">
+    <meta name="author" content="Yari">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/pages/questionsNoAnswers.css">
+</head>
+
+<body>
+    <!-- hlavička s názvom stránky a preklikmi -->
+    <header class="column center space-between full-width">
+        <div class="always-row">
+            <img src="img/logo.png" alt="Logo">
+            <h1>Yari's Art</h1>
+        </div>
+        <div id="navigation-top" class="navigation-container always-row full-width">
+            <i class="navigation-icon fa-solid fa-bars"></i>
+            <nav>
+                <ul class="navigation space-between">
+                    <li><a class="button invisible-button" href="index.html">Home</a></li>
+                    <li><a class="button invisible-button" href="questionsNoAnswers.html">QNA</a></li>
+                    <li><a class="button invisible-button" href="projects.html">Projects</a></li>
+                    <li><a class="button invisible-button" href="gallery.html">Gallery</a></li>
+                    <li><a class="button invisible-button" href="card.html">Card</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- acordion so zoznamom otázok a odpovedí, ktoré sa vďaka javasriptu zobrazia až po kliknutí na otázku -->
+    <main class="column center">
+        <section class="accordion column center full-width">
+            <h2 class="center-text">Question No Answers</h2>
+            <div class="accordion-box column container start">
+                <div class="row question container full-width">
+                    <p><strong>How often do you post?</strong></p>
+                </div>
+                <div class="answer container full-width">
+                    <p>As a general rule of thumb, I don't.</p>
+                </div> 
+            </div>
+            <div class="accordion-box column container start">
+                <div class="row question container full-width">
+                    <p><strong>Is this website up to date?</strong></p>
+                </div>
+                <div class="answer container full-width">
+                    <p>Definitely not.</p>
+                </div> 
+            </div>
+            <div class="accordion-box column container start">
+                <div class="row question container full-width">
+                    <p><strong>Why don't you do commission?</strong></p>
+                </div>
+                <div class="answer container full-width">
+                    <p>Cause who would buy them? Feel free to prove me wrong tough :P</p>
+                </div> 
+            </div>
+            <div class="accordion-box column container start">
+                <div class="row question container full-width">
+                    <p><strong>Will you ever finish your game?</strong></p>
+                </div>
+                <div class="answer container full-width">
+                    <p>Unlikely.</p>
+                </div> 
+            </div>
+            <div class="accordion-box column container start">
+                <div class="row question container full-width">
+                    <p><strong>Why are you acting like such a dick?</strong></p>
+                </div>
+                <div class="answer container full-width">
+                    <p>Cause I am.</p>
+                </div> 
+            </div>
+            <div class="accordion-box column container start">
+                <div class="row question container full-width">
+                    <p><strong>Why are here no real answers?</strong></p>
+                </div>
+                <div class="answer container full-width">
+                    <p>Read the title.</p>
+                </div> 
+            </div>
+        </section>
+        
+        <!-- Formulár cez ktorý sa môžu ľudia opýtať na otázky ak nie sú obsiahnuté v QNA -->
+        <!-- obsahuje input pre meno, email, otázku, checkbox na súhlas o spracovaní osobných údajov a tlačítko na odovzdanie -->
+        <form class="column" action="thankYou.html">
+            <h2 class="center-text">Was your question not answered? Contact me here</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Question:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            
+            <div class="always-row">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">I understand this form does nothing</label>
+            </div>
+    
+            <input class="button" type="submit" value="Send Question">
+        </form>
+    </main>
+
+    <!-- Footer, s preklikmi na ďalšie sekcie stránky a základnými informáciami -->
+    <footer class="column full-width">
+        <!-- o autorovi stránky a náhodný text s preklikom na rick-roll -->
+        <div class="always-row space-between">
+            <p>Crafted with love by Yari</p>
+            <a id="random-text" class="invisible-button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>
+        </div>
+    </footer>
+
+    <!-- importovanie scriptov -->
+    <script type="text/javascript" src="js/random-text.js"></script>
+    <script type="text/javascript" src="js/navigation.js"></script>
+    <script type="text/javascript" src="js/accordion.js"></script>
+</body>
+</html>

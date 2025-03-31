@@ -1,0 +1,87 @@
+/* typy zobrazenia */
+
+.grid {
+    gap: 30px;
+    grid-auto-flow: dense;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.always-row{
+    display: flex;
+    flex-direction: row;
+}
+
+/* kontajner s obmedzenou šírkou a padingom */
+.container {
+    padding: 20px;
+    width: 80%;
+    max-width: 80%;
+}
+
+/* nastaví element na plnú šírku */
+.full-width {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* classy na centrovanie */
+.center {
+    align-items: center;
+    align-content: center;
+}
+
+.end {
+    align-items: end;
+    align-content: end;
+}
+
+.start {
+    align-items: start;
+    align-content: start;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+/* úprava class pri malých obrazovkách */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .row>* {
+        margin: 15px 0px;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        max-width: 90%;
+        width: 90%
+    }
+}

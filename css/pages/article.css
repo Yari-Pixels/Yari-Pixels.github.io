@@ -1,0 +1,36 @@
+/* import css súborov potrebných na tejto stránke */
+@import "../main.css";
+@import "../classes/button.css";
+@import "../classes/flex.css";
+@import "../classes/navigation.css";
+
+article p, 
+article li {
+    margin: 20px 0;
+}
+
+article h2, 
+article h3 {
+    margin-top: 50px;
+}
+
+.inset-left {
+    padding-left: 20px;
+}
+
+.inset {
+    padding: 0 20px;
+}
+
+article {
+    margin: 50px 0;
+}
+
+article img{
+    max-height: 60lvh;
+    width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+    object-fit: contain;
+    object-position: 0 0;
+}

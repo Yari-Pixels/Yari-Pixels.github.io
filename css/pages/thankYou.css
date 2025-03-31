@@ -1,0 +1,19 @@
+@import "../main.css";
+@import "../classes/flex.css";
+@import "../classes/navigation.css";
+
+/* nastaví výšku stránky aby sa text zobrazil relatívne v strede */
+main {
+    min-height: 60vh;
+}
+
+/* centruje sekciu s textom na stred */
+main section {
+    margin: auto;
+}
+
+/* zabezpečí medzeru medzi dvoma zobrazenými textami */
+main h2,
+main h3 {
+    margin: 20px;
+}

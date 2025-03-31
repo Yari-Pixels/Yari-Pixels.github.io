@@ -1,0 +1,69 @@
+/* zariadi medzeru medzi nadpisom s logom a navigáciu */
+#navigation-top{
+    margin-top: 1.2em;
+}
+
+/* nastaví šírku navigácie na 100% */
+.navigation-container nav{
+    width: 100%;
+}
+
+/* zariadi usporiadanie tlačítok */
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* nastavenie veľkosti tlačítok */
+.navigation .button {
+    padding: 0px 10px;
+}
+
+/* ikona sa na veľkých obrazovkách nezobrazuje */
+.navigation-icon {
+    display: none;
+    cursor: pointer;
+    align-self: center;
+}
+
+/* úprava navigácie na hamburget menu pri malých obrazovkách */
+@media (max-width: 768px) {
+    #navigation-top{
+        margin-top: 0px;
+    }
+
+    .navigation-container{
+        width: fit-content;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation-top-clicked {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        position: absolute;
+        right: 0px;
+        top: 86px;
+        background: var(--element-color);
+    }
+    
+    .navigation .button {
+        margin: 20px 80px 20px 20px;
+    }
+
+    .navigation-icon {
+        display: block;
+    }
+
+    #navigation-top .navigation-icon {
+        font-size: 1.8em;
+    }
+
+    header{
+        flex-direction: row !important;
+    }
+}

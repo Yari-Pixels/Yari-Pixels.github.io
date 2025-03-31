@@ -1,0 +1,161 @@
+/* veľkosti obrazovky - poznámka pre seba*/
+/*  --mobile: 425px;
+    --tablet: 768px;
+    --laptop: 1024px;
+    --desktop: 1920px; */
+
+/* definícia premenných */
+:root {
+    /* farby */
+    --background-color-dark: #332339;
+    --background-color-light: #552f58;
+    --element-color: #2c1429;
+    --element-highlight-color: #230d1a;
+    --main-element-color: #791740;
+    --main-element-highlight-color: #66094c;
+    --contrast-color: white;
+    --contrast-highlight-color: #a567ad;
+}
+
+/* vynulovanie marginu a nastavenie box-sizingu na border-box */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* odstránenie základného formátovania odkazov */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* odstránenie základného formátovania listov */
+ul {
+    padding-left: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+/* nastavenie základnej veľkosti a hrúbky textu */
+#website-title,
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1em;
+}
+
+
+/* pozadie/font/predvolená farba a veľkosť textu */
+body {
+    background: linear-gradient(45deg, var(--background-color-dark) 0%, var(--background-color-light) 95%);
+    font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    color: var(--contrast-color);
+    min-height: 100lvh;
+    font-size: 15pt;
+    position: relative;
+}
+
+/* nastavenie farby a tieňa pre footer a header */
+header,
+footer {
+    background-color: var(--element-color);
+    box-shadow: 0px 0px 5px black, 0px 0px 12px #00000091;
+}
+
+/* nastavenie aby header zostal na obrazovke pri posune, nastavenie šírky na 100% a nastavenie paddingu */
+header {
+    position: sticky;
+    top:0px;
+    width: 100%;
+    padding: 20px 40px;
+    z-index: 1;
+}
+
+/* nastaví veľkosť ikony v headeri a zabezpečí medzeru medzi ňou a nadpisom */
+/* nastaví image-rendering na pixelated aby vzhľadom k veľkosti obrázku nedochádzalo k jeho rozmazaniu */
+header img {
+    height: 53px;
+    width: auto;
+    margin-right: 30px;
+    image-rendering: pixelated;
+}
+
+/* nastavenie aby sa footer zobrazoval na spodnej časti stránky bez ohľadu na to, či je na nej dosť obsahu a aby zaberal celú šírku */
+footer {
+    width: 100%;
+    position: sticky;
+    top: calc(100lvh - 57px);
+    padding: 15px 20px;
+    height: 260;
+}
+
+/* zariadie správne rozloženie stĺpcov s informáciami vo footeri */
+footer .container div {
+    flex: 1 1 1;
+    width: fit-content;
+}
+
+/* zabezpečí medzeru medzi ikonami kontaktu a textom kontaktu */
+footer i {
+    margin-right: 10px
+}
+
+/* nastavenie farby a šírky scrollbaru */
+::-webkit-scrollbar { /* pre chromium a webkit prehliadače */
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ad679f;
+}
+
+::-webkit-scrollbar-track {
+    background: #230d12;
+}
+
+html { /* pre gecko prehliadače */
+    scrollbar-width: thin;
+    scrollbar-color: #ad679f #230d12;
+}
+
+/* nastaví ako má vyzerať označený text */
+::selection {
+    color: var(--element-highlight-color);
+    background: #ffbff3;
+}
+
+/* nastaví aby sa selection nezobrazoval na obrázkoch a podobných elementoch */
+img::selection,
+i::selection,
+iframe::selection {
+    color: initial;
+    background: #cb6ba500;
+}
+
+/* zmenšenie fontu pri malých obrazovkách */
+@media (max-width: 1024px) {
+    body {
+        font-size: 14pt;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 13pt;
+    }
+}

@@ -1,0 +1,23 @@
+/* odstráni medzeri medzi prvkami accordionu */
+.accordion,
+.accordion-box {
+    padding: 0px;
+}
+
+/* nastaví farbu a kurzor na pointer */
+.question {
+    background: var(--element-color);
+    cursor: pointer;
+}
+
+/* od základu schovaná */
+.answer {
+    background: var(--element-highlight-color);
+    padding-left: 60px;
+    display: none;
+}
+
+/* pre js */
+.shown-answer .answer {
+    display: block;
+}

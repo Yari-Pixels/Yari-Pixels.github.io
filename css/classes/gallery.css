@@ -1,0 +1,42 @@
+/* definuje tvorbu gridu */
+.gallery-6 {
+    grid-template-columns: repeat(6, 200px);
+}
+
+/* definuje veľkosti obrázkov v gride */
+.gallery-6 .gallery-image {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    image-rendering: pixelated;
+}
+
+/* upraví grid pre menšie obrazovky */
+@media (max-width: 1700px) {
+    .gallery-6 {
+        grid-template-columns: repeat(3, 250px);
+    }
+}
+
+@media (max-width: 850px) {
+    .gallery-6 {
+        grid-template-columns: repeat(2, 250px);
+    }
+}
+
+@media (max-width: 550px) {
+    .gallery-6 {
+        grid-template-columns: repeat(2, 150px);
+    }
+
+    .gallery-6 .gallery-image{
+        height: 150px;
+        width: 150px;   
+    }
+}
+
+@media (max-width: 350px) {
+    .gallery-6 {
+        grid-template-columns: repeat(1, 150px);
+    }
+}

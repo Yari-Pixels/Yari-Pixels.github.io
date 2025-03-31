@@ -1,0 +1,116 @@
+/* nastavý polohu popisu slideshow na stred a nastaví jeho šírku na šírku obsiahnutého textu*/
+.slideshow-title {
+    position: absolute;
+    margin: auto 0px;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: fit-content;
+}
+
+/* nastaví aby sa pozícia obrázku určovala voči tomuto kontajneru */
+.slides-container {
+    position: relative;
+}
+
+/* nastavenie pozície voči kontajneru */
+.slides-container img {
+    position: absolute;
+    left: 0px;
+    bottom: 0%;
+    object-fit: cover;
+    image-rendering: pixelated;
+    z-index: -1;
+}
+
+/* veľkosti pre obrázok a container podľa ktorého sa určuje jeho pozícia */
+.slides-container,
+.slides-container img {
+    width: 100%;
+    max-width: 100%;
+    height: 31vw;
+    min-height: 250px;
+}
+
+/* nastavneie veľkostí slidu a jeho centrovanie */
+.slide {
+    width: 100%;
+    margin: auto 0px;
+}
+
+/* text vnútri slidov bude hrbý s tieňom */
+.slide p {
+    font-weight: 700;
+    text-shadow: 0px 0px 6px black, 0px 0px 12px black;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.slideshow-title {
+    font-weight: 700;
+    text-shadow: 0px 0px 6px black, 0px 0px 12px black;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+/* vycentruje šípky a nastaví im transition */
+#next-arrow,
+#prev-arrow {
+    display: block;
+    margin: auto 0px;
+    transition: transform 500ms;
+}
+
+/* nastaví uchytenie šípok pre animáciu a veľký padding aby sa na ne ľahko klikalo */
+#next-arrow {
+    padding: 10vw 20px 10vw 100px;
+    transform-origin: 100% 50%;
+}
+
+#prev-arrow {
+    padding: 10vw 100px 10vw 20px;
+    transform-origin: 0% 50%;
+}
+
+/* nastaví zväčšenie šípok pri prejdení myšou */
+#next-arrow:hover,
+#prev-arrow:hover {
+    transform: scale(1.5);
+}
+
+/* Zmenšenie ikon a nadpisov pri zmenšovaní obrazovky */
+@media (max-width: 768px) {
+    .slide p {
+        font-size: 2em;
+    }
+
+    .slideshow-title {
+        font-size: 1.2em;
+    }
+
+    .slides-container i {
+        font-size: 1.6em;
+    }
+
+    #next-arrow {
+        padding-left: 20px;
+    }
+    
+    #prev-arrow {
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .slide p {
+        font-size: 1.6em;
+    }
+    
+    .slideshow-title {
+        font-size: 1em;
+    }
+
+    .slides-container i {
+        font-size: 1.2em;
+    }
+}

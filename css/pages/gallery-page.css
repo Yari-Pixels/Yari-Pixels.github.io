@@ -1,0 +1,96 @@
+@import "../classes/button.css";
+@import "../classes/flex.css";
+@import "../classes/gallery.css";
+@import "../classes/navigation.css";
+@import "../main.css";
+
+main {
+    padding: 40px 20px;
+}
+
+/* táto trieda je používaná js kódom pre animáciu pri posune na dotykových displejoch */
+.no-transition{
+    transition: unset !important;
+}
+
+/* je shcovaný kým na neklikne na obrázok */
+/* zaberie celú výšku aj šírku obrazovky */
+/* fixed pozícia zabezpečí, že sa zobrazí rovnako bez ohľadu na to aký je posun po stránke */
+#modal-display {
+    display: none;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000bb;
+    z-index: 2;
+}
+
+/* zariadi medzeru za textom */
+h2 {
+    margin-bottom: 40px
+}
+
+/* prichytenie šípok na kraje obrazovky */
+#modal-prev-arrow {
+    left: 0;
+}
+
+#modal-next-arrow {
+    right: 0;
+}
+
+/* Nastaví aby sa šípky na posun zobrazovali nad obrázkom, aby mali stálu pozíciu a aby zaberali celú výšku obrazovky */
+#modal-prev-arrow,
+#modal-next-arrow {
+    position: fixed;
+    padding: 100vh 40px;
+    transition: transform 500ms;
+    z-index: 3;
+}
+
+/* animácia zväčšenia pri najdení na šípku kurzorom. */
+#modal-prev-arrow:hover,
+#modal-next-arrow:hover {
+    transform: scale(1.5);
+}
+
+/* definuje maximálnu šírku */
+#aspect-ratio-container {
+    display: flex;
+    height: 100vh;
+    max-width: 75%;
+    max-height: 90vh;
+    align-items: center;
+    margin: auto;
+}
+
+/* slúži na zobrazenie detailu obrázka */
+/* má definované pozadie kvôli zobrazeniu priehľadných obrázkov */
+/* zároveň definuje maximálnu výšku */
+#modal-image {
+    background: #202020;
+    image-rendering: pixelated; /* aby sa obrázky nerozmazávali pri približovaní */
+    margin: auto;
+    transform: translate(0px, 0px) scale(1);
+    width: 100vh;
+    max-width: 100%;
+    transition: 
+        transform 200ms,
+        opacity 200ms;
+    transform-origin: 0px 0px 0px;
+}
+
+/* pri malých obrazovkách odstráni šípky po boku obrázku a zobrazí ho na celú šírku ak je to možné*/
+@media (max-width: 700px) {
+    #modal-display #aspect-ratio-container {
+        max-width: 100%;
+    }
+
+    #modal-prev-arrow,
+    #modal-next-arrow {
+        display: none;
+    }
+}

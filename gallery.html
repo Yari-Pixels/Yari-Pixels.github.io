@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The art of Yari</title>
+
+    <meta name="description" content="Gallery of all Emil's works">
+    <meta name="keywords" content="pixel-art, pixelart, gallery, art, digital art, pixel art">
+    <meta name="author" content="Yari">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/pages/gallery-page.css">
+</head>
+
+<body>
+    <!-- hlavička s názvom stránky a preklikmi -->
+    <header class="column center space-between full-width">
+        <div class="always-row">
+            <img src="img/logo.png" alt="Logo">
+            <h1>Yari's Art</h1>
+        </div>
+        <div id="navigation-top" class="navigation-container always-row full-width">
+            <i class="navigation-icon fa-solid fa-bars"></i>
+            <nav>
+                <ul class="navigation space-between">
+                    <li><a class="button invisible-button" href="index.html">Home</a></li>
+                    <li><a class="button invisible-button" href="questionsNoAnswers.html">QNA</a></li>
+                    <li><a class="button invisible-button" href="projects.html">Projects</a></li>
+                    <li><a class="button invisible-button" href="gallery.html">Gallery</a></li>
+                    <li><a class="button invisible-button" href="card.html">Card</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="column center">
+        <!-- responzívna galéria o šírke max 6 elementov ktorá je napĺňaná pomocou javascriptu -->
+        <section class="column full-width center">
+            <h2>The Art of Yari</h2>
+            <div class="grid gallery-6" id="main-gallery">
+                
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer, s preklikmi na ďalšie sekcie stránky a základnými informáciami -->
+    <footer class="column full-width">
+        <!-- o autorovi stránky a náhodný text s preklikom na rick-roll -->
+        <div class="always-row space-between">
+            <p>Crafted with love by Yari</p>
+            <a id="random-text" class="invisible-button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>
+        </div>
+    </footer>
+    <!-- div pre zobrazenie detailu obrázku skrz celú stránku nad ostatným obsahom -->
+    <div id="modal-display" class="column center">
+        <i id="modal-prev-arrow" class="fa-solid fa-chevron-left fa-2xl"></i>
+        <div id="aspect-ratio-container">
+            <img id="modal-image" src="" alt="" title="">
+        </div>
+        <i id="modal-next-arrow" class="fa-solid fa-chevron-right fa-2xl"></i>
+    </div>
+    <!-- importovanie scriptov -->
+    <script type="text/javascript" src="js/gallery-modal.js"></script>
+    <script type="text/javascript" src="js/disable-scroll.js"></script>
+    <script type="text/javascript" src="js/random-text.js"></script>
+    <script type="text/javascript" src="js/navigation.js"></script>
+</body>
+</html>

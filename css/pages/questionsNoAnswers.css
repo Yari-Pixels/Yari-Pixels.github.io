@@ -1,0 +1,54 @@
+/* import css súborov potrebných na tejto stránke */
+@import "../main.css";
+@import "../classes/button.css";
+@import "../classes/flex.css";
+@import "../classes/navigation.css";
+@import "../classes/accordion.css";
+
+/* zabezpečí medzeru medzi jednotlivými sekciami */
+section {
+    margin: 50px 0px;
+}
+
+/* zabezpečí medzeru za nadpisom */
+h2 {
+    margin-bottom: 30px;
+}
+
+/* nastaví rozmery formuláru */
+form {
+    max-width: 800px;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+/* nastaví medzeru medzi label a input */
+label {
+    margin-bottom: 5px;
+}
+
+/* nastavý rozmery a štýl orámovania pre inputy a text area */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--element-color);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* zabezpečí medzeru medzi checkboxom a jeho labelom */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* nastaví rozmer tlačítka a medzeru od checkboxu */
+form .button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 16px;
+    width: 100%;
+}

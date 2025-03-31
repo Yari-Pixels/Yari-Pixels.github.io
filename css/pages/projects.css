@@ -1,0 +1,56 @@
+/* import css súborov potrebných na tejto stránke */
+@import "../main.css";
+@import "../classes/button.css";
+@import "../classes/flex.css";
+@import "../classes/navigation.css";
+@import "../classes/accordion.css";
+
+section {
+    height: fit-content;
+    position: relative;
+}
+
+section img {
+    margin-right: 20px;
+    height: auto;
+    width: 250px;
+    object-fit: cover;
+}
+
+section>div {
+    margin-bottom: 60px;
+}
+
+section .buttons {
+    position: absolute;
+    gap: 40px;
+    bottom: 20px;
+    right: 20px;
+}
+
+section .button {
+    padding: 10px 40px;
+    text-transform: unset;
+}   
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+
+    section img {
+        width: 100%;
+    }
+
+    section .buttons {
+        position: static;
+        top: unset;
+        left: unset;
+        margin-top: 30px;
+        gap: 15px;
+    }
+
+    section .button {
+        margin: 0px;
+    }
+}

@@ -1,0 +1,32 @@
+/* import css súborov potrebných na tejto stránke */
+@import "../main.css";
+@import "../classes/button.css";
+@import "../classes/flex.css";
+@import "../classes/navigation.css";
+@import "../classes/slideshow.css";
+
+/* zabezpečí medzeru za nadpisom */
+h2 {
+    margin-bottom: 30px;
+}
+
+/* zabezpečí medzeru pred a za nadpisom*/
+main h3 {
+    margin: 30px 0px
+}
+
+/* zabezpečí medzeru medzi koncom obsahu a footerom */
+footer {
+    margin-top: 30px;
+}
+
+/* pridá elementu s popisom pozadie a nastavý jeho padding na vysokú hodnotu pre zvýraznenie textu */
+.description {
+    background-color: var(--element-color);
+    padding: 80px 20px;
+}
+
+/* nastavý medzeri medzi kontajnermi */
+main .container {
+    margin: 60px 0px;
+}

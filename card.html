@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Yari's Card</title>
+
+    <meta name="description" content="Card with links to all social media platforms">
+    <meta name="keywords" content="pixel-art, pixelart, gallery, art, digital art, pixel art">
+    <meta name="author" content="Ondrej Mada">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/pages/card.css">
+</head>
+<!-- 
+Táto stránka slúži na podobný účel ako taká vizitka.
+Je strohá, obsahuje iba linky na rôzne účty autora, rovnako ako prekliky na najdôležitejšie sekcie stránky (index a galéria)
+Toto
+-->
+<body>
+    <!-- Hlavička obsahujúca názov stránky a krátky popis -->
+    <header class="column center">
+        <h1>Yari</h1>
+        <p>Hi! I am a hellspawn cosplaying as pixelartist.</p>
+        <p>Instead of talking about myself tough, I have collected some things said about me by others</p>
+        <p>I swear to got I wouldn't wanna see inside your head. - Hmota1</p>
+        <p>Silly... - Sin(pi)</p>
+        <p>You're such a dick! - Mareg Maroš</p>
+        <p>Awesomesauce - Polly</p>
+        <p>How can you be so ████████ yet so cute - Hernik</p>
+        <p>Yari is such a Cutie Pie ! - Bleu</p>
+        <i class="fa-sharp-duotone fa-solid fa-heart" id="love-heart"></i>
+    </header>
+    <main class="column center full-width">
+
+        <!-- Sekcia obsahujúca prekliky na ďalšie sekcie stránky a rôzne verejné / pracovné účty autora -->
+        <nav id="socials-media-links" class="button-list">
+            <h3>Link & Socials</h3>
+            <!-- Prekliky na iné sekcie stránky používajú inú farbu a hrubý text, to je dosiahnuté pomocou triedy main-button -->
+            <a class="button main-button" href="index.html">
+                <i class="fa-solid fa-house"></i>main page
+            </a>
+            <a class="button main-button" href="gallery.html">
+                <i class="fa-regular fa-image"></i>gallery
+            </a>
+            <!-- Linky na iné stránky používajú bežnú triedu button konzistentnú naprieč všetkými podstránkami -->
+            <a class="button" href="https://bsky.app/profile/{autor}.bsky.social">
+                <i class="fa-brands fa-bluesky"></i>bluesky
+            </a>
+            <a class="button" href="https://www.pixiv.net/en/users/{autor}">
+                <i class="fa-brands fa-pixiv"></i>pixiv
+            </a>
+            <a class="button" href="https://x.com/{autor}">
+                <i class="fa-brands fa-twitter"></i>twitter
+            </a>
+            <a class="button" href="https://github.com/{autor}">
+                <i class="fa-brands fa-github"></i>github
+            </a>
+            <a class="button" href="https://www.youtube.com/{autor}">
+                <i class="fa-brands fa-youtube"></i>youtube
+            </a>
+        </nav>
+
+        <!-- Zoznam vybraných projektov na ktorých tvorbe sa autor stránky podielal -->
+        <section id="socials-media-links" class="button-list">
+            <h3>Projects I contributed to</h3>
+            <a class="button" href="https://{author}.itch.io/{game}">
+                <i class="fa-solid fa-gamepad"></i>subwater trouble
+            </a>
+            <a class="button" href="https://{author}.itch.io/{game}">
+                <i class="fa-solid fa-gamepad"></i>the path
+            </a>
+            <a class="button" href="https://nfsmods.xyz/mod/{procejt_id}">
+                <i class="fa-solid fa-location-dot"></i>nfsu2 fast travel mod
+            </a>
+        </section>
+    </main>
+    <!-- Footer, ktorý na tejto stránke plní skôr estetickú funkciu -->
+    <footer>
+        <div class="row space-between">
+            <p>&copy; 2024 Ondrej Mada. All Rights Reserved.</p>
+            <!-- Text/fráza, ktorá je náhodne vyberaná zo zoznamu a obsahuje preklik na rick-roll -->
+            <a class="invisible-button" id="random-text" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/random-text.js"></script>
+</body>
+</html>

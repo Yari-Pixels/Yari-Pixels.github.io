@@ -1,0 +1,45 @@
+@import "../classes/button.css";
+@import "../classes/flex.css";
+@import "../main.css";
+
+header {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    position: unset;
+}
+
+/* zariadi medzeru medzi všetkými prvkami headeru */
+header * {
+    margin: 10px 0px;
+}
+
+/* odtráni zafarbenie a tieň headeru */
+header, 
+footer {
+    background: unset;
+    box-shadow: unset;  
+}
+
+/* zariadi medzeru medzi obsahom a headerom/footerom */
+main {
+    margin: 20px 0px 50px 0px;
+}
+
+/* zariadi medzeru medzi sekciami*/
+main section {
+    padding-top: 15px;
+}
+
+/* nastaví transition pre ikonu */
+#love-heart {
+    transition:
+        transform 1s,
+        color 1s;
+}
+
+/* nastaví zmenu farby a veľkosti pre ikonu */
+#love-heart:hover {
+    color: #FF8AE5;
+    transform: scale(1.5);
+}
