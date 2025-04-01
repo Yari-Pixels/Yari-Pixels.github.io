@@ -18,7 +18,12 @@
     flex-direction: row;
 }
 
-.always-row{
+.tablet-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.always-row {
     display: flex;
     flex-direction: row;
 }
@@ -79,9 +84,17 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
     .container {
         max-width: 90%;
         width: 90%
+    }
+
+    .tablet-row {
+        flex-direction: column;
+    }
+
+    .tablet-row>* {
+        margin: 15px 0px;
     }
 }
