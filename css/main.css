@@ -106,17 +106,6 @@ footer {
     height: 57px;
 }
 
-/* zariadie správne rozloženie stĺpcov s informáciami vo footeri */
-footer .container div {
-    flex: 1 1 1;
-    width: fit-content;
-}
-
-/* zabezpečí medzeru medzi ikonami kontaktu a textom kontaktu */
-footer i {
-    margin-right: 10px
-}
-
 /* nastavenie farby a šírky scrollbaru */
 ::-webkit-scrollbar { /* pre chromium a webkit prehliadače */
     width: 5px;
@@ -158,6 +147,14 @@ iframe::selection {
 
 @media (max-width: 768px) {
     body {
-        font-size: 13pt;
+        font-size: 12pt;
+    }
+}
+
+@media (max-width: 500px) {
+    footer {
+        height: 132px;
+        top: calc(100vh - 132px);
+        top: calc(100dvh - 132px);
     }
 }
