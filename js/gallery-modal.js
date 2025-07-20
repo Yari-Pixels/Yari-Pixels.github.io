@@ -23,15 +23,9 @@ const modalImage = document.getElementById('modal-image');
 
 //funkcia ktorá pomocou cyklu naplní galériu obrázkami zo slovníku
 async function loadImages() {
-    try {
-        const response = fetch('js/img.json');
-        if (!response.ok) {
-            throw new Error('Network response was not ok ' + response.statusText);
-        }
-        images = response.json();
-    } catch (error) {
-        console.error('There has been a problem with your fetch operation:', error);
-    }
+    let response = await fetch("./js/images.json");
+    images = await response.json();
+
     for (const [id, image] of Object.entries(images)) {
         createImageElement(id, image)
     }
