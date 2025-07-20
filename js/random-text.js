@@ -22,7 +22,9 @@ texts = [
     "Season 2 when?",
     "No corpos allowed",
     "Safe space for all pixel lovers",
-    "UwU"
+    "UwU",
+    "That was an absolute waste of time...",
+    "Silli"
 ]
 
 let randomText = document.getElementById("random-text");

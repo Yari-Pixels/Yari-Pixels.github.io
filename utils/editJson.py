@@ -27,14 +27,14 @@ def saveChanges (image:ImageData, filePath):
     destination:str = "../" + image.src
     copyfile(source, destination)
 
-    with open ("../js/images.json", "r") as file:
+    with open ("../js/img.json", "r") as file:
         importedPalettes:dict = json.load (file)
-    with open ("../js/images.json.bak", "w") as file:
+    with open ("../js/img.json.bak", "w") as file:
         json.dump(importedPalettes, file)
 
     keys:int = list (map (int, importedPalettes.keys()))
     nextKey:str = str (max (keys) + 1)
     importedPalettes[nextKey] = image.as_dict()
 
-    with open ("../js/images.json", "w") as file:
+    with open ("../js/img.json", "w") as file:
         json.dump (importedPalettes, file)
