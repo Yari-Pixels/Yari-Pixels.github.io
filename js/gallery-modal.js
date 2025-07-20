@@ -1,6 +1,6 @@
 //hrôzostrašne vyzerajúca definícia slovníku z obrázkami
 //nebudem klamať, na tvorbu tohto slovníka som si spravil python script
-let images = undefined;
+let images = {};
 let currentImageId = undefined;
 
 //premenné pre prácu s posunom po dotykových obrazovkách
@@ -22,7 +22,7 @@ const modalImage = document.getElementById('modal-image');
 
 
 //funkcia ktorá pomocou cyklu naplní galériu obrázkami zo slovníku
-function loadImages() {
+async function loadImages() {
     try {
         const response = fetch('js/img.json');
         if (!response.ok) {
