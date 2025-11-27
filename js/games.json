@@ -1,0 +1,18 @@
+{
+    "subwater-trouble" : {
+        "group" : "8-Bit Whiskers",
+        "subText" : "made for the 2024 pixel game jam",
+        "src" : "https://html-classic.itch.zone/html/10472471/index.html",
+        "link" : "https://8bitwhiskers.itch.io/subwater-trouble",
+        "x" : "1000",
+        "y" : "700"
+    },
+    "furniture-madness" : {
+        "group" : "HellDuck",
+        "subText" : "made for the 2025 pixel parlor jam",
+        "src" : "https://html-classic.itch.zone/html/15358420/index.html",
+        "link" : "https://yari-pixels.itch.io/furniture-madness",
+        "x" : "1152",
+        "y" : "648"
+    }
+}
