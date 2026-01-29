@@ -43,3 +43,14 @@ main section {
     color: #FF8AE5;
     transform: scale(1.5);
 }
+
+.icon {
+    height: 4em;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    width: auto;
+    background-image: url("icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
